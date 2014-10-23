@@ -1,12 +1,12 @@
 body {position: relative; background-color: #f2f0e9;}
 
-.effra {font-family: "effra"; font-style: normal; font-weight: 700; font-size: 12px; letter-spacing: 4px; text-transform: uppercase;}
+.effra {font-family: "effra"; font-style: normal; font-weight: 700; font-size: 12px; letter-spacing: 5px; text-transform: uppercase;}
 
 .gothic {font-family: "letter-gothic-std",sans-serif; font-style: normal; font-weight: 700;}
 
-.border {position: fixed; margin: 1%; border: 2px solid #e64424; width: 97.5%; height: 97%; background-color: #f2f0e9;}
+.border {position: fixed; margin: 2% 2% 3% 2%; overflow: scroll; border: 2px solid #e64424; width: 95.5%; height: 94.5%; background-color: #f2f0e9;}
 
-.mainContainer {position: relative; padding: 7% 9%; text-align: center;}
+.mainContainer {position: relative; padding: 9% 9% 5% 9%; text-align: center;}
 
 .headerInfo {width: 100%; margin-bottom: 5%; text-align: center; vertical-align: middle;}
 
@@ -19,6 +19,8 @@ body {position: relative; background-color: #f2f0e9;}
 .headerInfo .phoneContainer {float: left; width: 30%; text-align: left; margin-left: 2%;}
 
 .headerInfo .addressContainer {float: right; width: 30%; text-align: right; margin-right: 2%;}
+
+.headerAddress a {color:black;}
 
 .mapContainer {position: relative; width: 100%; margin: 1% 0;}
 
@@ -36,7 +38,7 @@ body {position: relative; background-color: #f2f0e9;}
 
 .footerInfo {margin-top: 6%; width: 100%;}
 
-.footerContent {font-size: 32px; text-transform: uppercase;}
+.footerContent {font-size: 36px; text-transform: uppercase; letter-spacing: 5px;}
 
 @media screen and (max-width: 1200px){
 
@@ -48,13 +50,13 @@ body {position: relative; background-color: #f2f0e9;}
 
 	.effra {font-size: 18px; letter-spacing: 5px;}
 
-	.border {display: none;}
+	.border {border: none; overflow: visible;}
 
-	.mainContainer {margin: 5%; padding: 0; border: 4px solid #e64424;}
+	.mainContainer {margin: 5%; padding: 0; border: 2px solid #e64424;}
 
 	.headerInfo {margin: 0;}
 
-	.headerInfo .logoContainer, .headerInfo .phoneContainer, .headerInfo .addressContainer {display: block; text-align: center; margin: 0; padding: 3% 0; width: 100%; float: none; border-bottom: 4px solid #e64424;}
+	.headerInfo .logoContainer, .headerInfo .phoneContainer, .headerInfo .addressContainer {display: block; text-align: center; margin: 0; padding: 3% 0; width: 100%; float: none; border-bottom: 2px solid #e64424;}
 
 	.headerInfo .phoneContainer p, .headerInfo .addressContainer p {margin: 0; color: black;}
 
