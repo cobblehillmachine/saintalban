@@ -4,7 +4,9 @@ body {position: relative; height:100%; background-color: #f2f0e9;}
 
 .gothic {font-family: "letter-gothic-std",sans-serif; font-style: normal; font-weight: 700;}
 
-.border {position: fixed; margin: 2% 2% 3% 2%; overflow: scroll; border: 2px solid #e64424; width: 95.5%; height: 94.5%; background-color: #f2f0e9;}
+.border {position: fixed; margin: 2% 2% 3% 2%; overflow: scroll; border: 2px solid #e64424; width: 95.5%; height: 92.5%; background-color: #f2f0e9;}
+
+.border::-webkit-scrollbar {display: none;}
 
 .mainContainer {position: relative; padding: 9% 9% 5% 9%; text-align: center;}
 
