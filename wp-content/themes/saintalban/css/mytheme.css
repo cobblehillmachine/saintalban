@@ -50,7 +50,7 @@ body {position: relative; height:100%; background-color: #f2f0e9;}
 
 	.effra {font-size: 18px; letter-spacing: 5px;}
 
-	.border {border: none; overflow: visible;}
+	.border {position: relative; border: none; overflow: visible;}
 
 	.mainContainer {margin: 5%; padding: 0; border: 2px solid #e64424;}
 
