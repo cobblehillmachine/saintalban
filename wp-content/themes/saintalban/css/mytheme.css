@@ -22,6 +22,7 @@ body {position: relative; height:100%; background-color: #f2f0e9; }
 
 .headerInfo .logoContainer {width: 33%; margin-top: -2%;}
 .headerInfo .logoContainer img {	max-width: 100%; height: auto;	width: auto;}
+.headerInfo .logoContainer p {	font-size: 16px;}
 
 .headerInfo .phoneContainer, .headerInfo .addressContainer {margin-top: 50px;}
 
@@ -67,7 +68,7 @@ body {position: relative; height:100%; background-color: #f2f0e9; }
 	.mainContainer {margin:10px;border: 2px solid #e64424;width:auto; overflow:auto;}
 
 	.headerInfo {margin: 0; padding-top:0%;}
-	.headerInfo .logoContainer img {	width: auto; max-width: 92%}
+	.headerInfo .logoContainer img {	width: auto; max-width: 80%}
 
 	.headerInfo .logoContainer, .headerInfo .phoneContainer, .headerInfo .addressContainer {display: block; text-align: center; margin: 0; padding: 3% 0; width: 100%; float: none; border-bottom: 2px solid #e64424;}
 
