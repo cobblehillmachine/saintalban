@@ -516,3 +516,10 @@ if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow
 
 // removes admin bar on wordpress home
 add_filter( 'show_admin_bar', '__return_false' );
+
+// Add Favicon //
+function diww_favicon() {
+	echo '<link rel="shortcut icon" type="image/x-icon" href="' . get_site_url() . '/favicon.ico" />';
+}
+add_action('wp_head', 'diww_favicon');
+add_action('admin_head', 'diww_favicon');
