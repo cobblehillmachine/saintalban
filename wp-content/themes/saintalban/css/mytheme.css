@@ -1,26 +1,29 @@
-body {position: relative; height:100%; background-color: #f2f0e9;}
+html {	height:100%;}
 
-.effra {font-family: "effra"; font-style: normal; font-weight: 700; font-size: 12px; letter-spacing: 5px; text-transform: uppercase;}
+body {position: relative; height:100%; background-color: #f2f0e9; outline: 2px solid #e64424; outline-offset:-20px;}
+
+.effra {font-family: "effra"; font-style: normal; font-weight: 700; font-size: 14px; letter-spacing: 5px; text-transform: uppercase;}
 
 .gothic {font-family: "letter-gothic-std",sans-serif; font-style: normal; font-weight: 700;}
 
-.border {position: fixed; margin: 2% 2% 3% 2%; overflow: scroll; border: 2px solid #e64424; width: 95.5%; height: 92.5%; background-color: #f2f0e9;}
+/*.border {position: fixed; margin: 2% 2% 3% 2%; overflow: scroll; border: 2px solid #e64424; width: 95.5%; height: 92.5%; background-color: #f2f0e9;}*/
 
 .border::-webkit-scrollbar {display: none;}
 
-.mainContainer {position: relative; padding: 9% 9% 5% 9%; text-align: center;}
+.mainContainer {margin: 0 auto;	position: relative;	text-align: center; width:75%; max-width:1430px;}
 
-.headerInfo {width: 100%; margin-bottom: 5%; text-align: center; vertical-align: middle;}
+.headerInfo {width: 100%; margin-bottom: 5%; text-align: center; vertical-align: middle; padding-top:150px;}
 
 .headerInfo .logoContainer, .headerInfo .phoneContainer, .headerInfo .addressContainer {height:100%; display: inline-block;}
 
 .headerInfo .logoContainer {width: 33%; margin-top: -2%;}
+.headerInfo .logoContainer img {	max-width: 100%}
 
-.headerInfo .phoneContainer, .headerInfo .addressContainer {margin-top: 3%;}
+.headerInfo .phoneContainer, .headerInfo .addressContainer {margin-top: 50px;}
 
-.headerInfo .phoneContainer {float: left; width: 30%; text-align: left; margin-left: 2%;}
+.headerInfo .phoneContainer {float: left; width: 30%; text-align: left; margin-left: 20px;}
 
-.headerInfo .addressContainer {float: right; width: 30%; text-align: right; margin-right: 2%;}
+.headerInfo .addressContainer {float: right; width: 30%; text-align: right; margin-right: 20px;}
 
 .headerAddress a {color:black;}
 
@@ -42,21 +45,21 @@ body {position: relative; height:100%; background-color: #f2f0e9;}
 
 .footerContent {font-size: 36px; text-transform: uppercase; letter-spacing: 5px;}
 
-@media screen and (max-width: 1200px){
+/*@media screen and (max-width: 1200px){
 
 	.headerInfo .logoContainer {width: 33%; margin-top: -4%;}
 
-}
+}*/
 
 @media screen and (max-width: 1100px){
 
-	.effra {font-size: 18px; letter-spacing: 5px;}
+	body {	outline:0;}
 
-	.border {position: relative; border: none; overflow: visible;}
+	.effra {font-size: 14px; letter-spacing: 5px;}
 
-	.mainContainer {margin: 5%; padding: 0; border: 2px solid #e64424;}
+	.mainContainer {width:96%; margin-top: 2%;border: 2px solid #e64424;}
 
-	.headerInfo {margin: 0;}
+	.headerInfo {margin: 0; padding-top:3%;}
 
 	.headerInfo .logoContainer, .headerInfo .phoneContainer, .headerInfo .addressContainer {display: block; text-align: center; margin: 0; padding: 3% 0; width: 100%; float: none; border-bottom: 2px solid #e64424;}
 
@@ -68,7 +71,7 @@ body {position: relative; height:100%; background-color: #f2f0e9;}
 
 	.mapContainer .desktopMap {display: none;}
 
-	.mapContainer .mobileMap {display: block; width: 101%;}
+	.mapContainer .mobileMap {display: block; /*width: 101%;*/}
 
 	.parkingInfoContainer {position: relative; left: 0; bottom: 0; margin: 0; padding: 3%; width: 94.5%;}
 

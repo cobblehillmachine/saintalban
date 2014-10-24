@@ -12,7 +12,7 @@
  */
 
 get_header(); ?>
-<div class="border">
+
 <div class="mainContainer">
 	<div class="headerInfo">
 		<div class="logoContainer">
@@ -42,7 +42,7 @@ get_header(); ?>
 	</div>
 
 </div>
-</div>
+
 
 
 <?php get_footer(); ?>
