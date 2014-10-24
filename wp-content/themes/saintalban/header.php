@@ -31,8 +31,8 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/mytheme.css" />
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_1_11_0.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/retina.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/mytheme.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

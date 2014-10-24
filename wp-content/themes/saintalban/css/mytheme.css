@@ -1,6 +1,10 @@
 html {	height:100%;}
 
-body {position: relative; height:100%; background-color: #f2f0e9; outline: 2px solid #e64424; outline-offset:-20px;}
+body {position: relative; height:100%; background-color: #f2f0e9; }
+
+.wrapper {}
+
+.inside {	border: 2px red solid; margin: 0 auto;/*width: 98%;*/ margin: 20px;}
 
 .effra {font-family: "effra"; font-style: normal; font-weight: 700; font-size: 14px; letter-spacing: 5px; text-transform: uppercase;}
 
@@ -12,7 +16,7 @@ body {position: relative; height:100%; background-color: #f2f0e9; outline: 2px s
 
 .mainContainer {margin: 0 auto;	position: relative;	text-align: center; width:75%; max-width:1430px;}
 
-.headerInfo {width: 100%; margin-bottom: 5%; text-align: center; vertical-align: middle; padding-top:150px;}
+.headerInfo {width: 100%; margin-bottom: 5%; text-align: center; vertical-align: middle; padding-top:100px;}
 
 .headerInfo .logoContainer, .headerInfo .phoneContainer, .headerInfo .addressContainer {height:100%; display: inline-block;}
 
@@ -27,7 +31,7 @@ body {position: relative; height:100%; background-color: #f2f0e9; outline: 2px s
 
 .headerAddress a {color:black;}
 
-.mapContainer {position: relative; width: 100%; margin: 1% 0;}
+.mapContainer {position: relative; width: 100%; margin: 1% 0;	height:30%;}
 
 .mapContainer img {width: 100%; z-index: 0;}
 
@@ -43,17 +47,20 @@ body {position: relative; height:100%; background-color: #f2f0e9; outline: 2px s
 
 .footerInfo {margin-top: 6%; width: 100%;}
 
-.footerContent {font-size: 36px; text-transform: uppercase; letter-spacing: 5px;}
+.footerContent {font-size: 36px; text-transform: uppercase; letter-spacing: 5px;padding-bottom:75px;}
 
 /*@media screen and (max-width: 1200px){
 
 	.headerInfo .logoContainer {width: 33%; margin-top: -4%;}
 
 }*/
+.bottom {	display: none;}
 
 @media screen and (max-width: 1100px){
 
 	body {	outline:0;}
+
+	.inside {	border:0;}
 
 	.effra {font-size: 14px; letter-spacing: 5px;}
 
@@ -84,4 +91,6 @@ body {position: relative; height:100%; background-color: #f2f0e9; outline: 2px s
 	.footerInfo {margin: 0;}
 
 	.footerContent {margin: 0; padding: 4%; font-size: 13px; letter-spacing: 4px;}
+
+	.bottom {	display:block; width: 100%;}
 }
