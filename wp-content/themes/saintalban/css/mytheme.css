@@ -21,7 +21,7 @@ body {position: relative; height:100%; background-color: #f2f0e9; }
 .headerInfo .logoContainer, .headerInfo .phoneContainer, .headerInfo .addressContainer {height:100%; display: inline-block;}
 
 .headerInfo .logoContainer {width: 33%; margin-top: -2%;}
-.headerInfo .logoContainer img {	max-width: 100%}
+.headerInfo .logoContainer img {	max-width: 100%; height: auto;	width: auto;}
 
 .headerInfo .phoneContainer, .headerInfo .addressContainer {margin-top: 50px;}
 
