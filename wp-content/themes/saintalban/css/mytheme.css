@@ -60,11 +60,11 @@ body {position: relative; height:100%; background-color: #f2f0e9; }
 
 	body {	outline:0;}
 
-	.inside {	border:0;}
+	.inside {	border:0; margin:0;}
 
 	.effra {font-size: 14px; letter-spacing: 5px;}
 
-	.mainContainer {width:96%; margin-top: 2%; margin-bottom:10px;border: 2px solid #e64424;}
+	.mainContainer {margin:10px;border: 2px solid #e64424;width:auto;}
 
 	.headerInfo {margin: 0; padding-top:3%;}
 
