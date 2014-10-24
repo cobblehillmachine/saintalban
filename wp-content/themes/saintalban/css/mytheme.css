@@ -57,7 +57,7 @@ body {position: relative; height:100%; background-color: #f2f0e9; outline: 2px s
 
 	.effra {font-size: 14px; letter-spacing: 5px;}
 
-	.mainContainer {width:96%; margin-top: 2%;border: 2px solid #e64424;}
+	.mainContainer {width:96%; margin-top: 2%; margin-bottom:2%;border: 2px solid #e64424;}
 
 	.headerInfo {margin: 0; padding-top:3%;}
 
