@@ -18,6 +18,7 @@ get_header(); ?>
 			<div class="headerInfo">
 				<div class="logoContainer">
 					<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg" alt="Saint Alban">
+					<p class="effra">All Day</p>
 				</div>
 				<div class="addressContainer">
 					<p class="effra headerAddress"><a href="https://www.google.com/maps/place/710+King+St,+Charleston,+SC+29403/@32.798969,-79.946458,17z/data=!3m1!4b1!4m2!3m1!1s0x88fe7a5cbd6a1605:0x863feefdd436a06f" target="_blank"><?php the_field('address'); ?></a></p>
