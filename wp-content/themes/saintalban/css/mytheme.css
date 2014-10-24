@@ -60,7 +60,7 @@ body {position: relative; height:100%; background-color: #f2f0e9; }
 
 	body {	outline:0;}
 
-	.inside {	border:0; margin:0;}
+	.inside {	border:0; margin:0; padding-bottom:1px;}
 
 	.effra {font-size: 14px; letter-spacing: 5px;}
 
