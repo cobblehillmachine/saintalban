@@ -67,6 +67,7 @@ body {position: relative; height:100%; background-color: #f2f0e9; }
 	.mainContainer {margin:10px;border: 2px solid #e64424;width:auto; overflow:auto;}
 
 	.headerInfo {margin: 0; padding-top:3%;}
+	.headerInfo .logoContainer img {	width: 92%;}
 
 	.headerInfo .logoContainer, .headerInfo .phoneContainer, .headerInfo .addressContainer {display: block; text-align: center; margin: 0; padding: 3% 0; width: 100%; float: none; border-bottom: 2px solid #e64424;}
 
