@@ -1,7 +1,7 @@
 html {	height:100%;}
-body {position: relative; height:100%; background-color: #f2f0e9; }
+body {position: relative; height:100%; background-color: #f2f0e9; margin: 0;}
 ul {	padding:0 ; margin: 0;}
-a {	text-decoration: none;}
+a {	text-decoration: none; color: black;}
 .inside {	border: 2px #e64424 solid; margin: 0 auto;/*width: 98%;*/ margin: 20px;}
 .effra {font-family: "effra"; font-style: normal; font-weight: 700; font-size: 14px; letter-spacing: 5px; text-transform: uppercase; margin-bottom:0;}
 .gothic {font-family: "letter-gothic-std",sans-serif; font-style: normal; font-weight: 700;}
@@ -26,24 +26,31 @@ a {	text-decoration: none;}
 .flex-control-nav li a.flex-active {	background: black;}
 .flex-control-nav li a:hover {	background: black; opacity: 0.5;}
 
-.bottom-cont {	width: 100%; overflow: hidden; position: relative; margin-bottom: 30px;}
+.bottom-cont {	width: 100%; overflow: hidden; position: relative; margin-bottom: 30px; display: table;}
 
-.left-cont {	width: 43%; margin-right: 2%; display: inline-block; vertical-align: top;}
+.left-cont {	width: 43%; padding-right: 2%; display: table-cell; vertical-align: top;}
 .left-cont .row {	width: 100%; margin: 10px 0; }
-.left-cont .row.shop-hours, .left-cont .row.menu-cta {	background-color:#d9d8d1 ;}
-.left-cont .row.shop-hours {	padding: 16px 0; margin-top: 0;}
-.left-cont .row.shop-hours img {	display: inline-block;  vertical-align: middle}
-.left-cont .row.shop-hours .hours {	display: inline-block; vertical-align: middle}
-.left-cont .row.shop-hours li {	display: inline-block; margin: 0 20px;}
-.left-cont .row.slogan {	background-color: #313131; color: #d9d8d1; padding: 30px 0;}
-.left-cont .row.menu-cta {	outline: 2px solid #313131; outline-offset: -20px; padding: 50px 0; margin-bottom: 0;}
+.left-cont .row.shop-hours, .left-cont .row.menu-cta-wrapper {	background-color:#d9d8d1 ;}
+.left-cont .row.shop-hours {	padding: 16px 0; margin-top: 0; display: table;}
+.left-cont .row.shop-hours img {	display:table-cell;  vertical-align: middle; padding-left:20px;}
+.left-cont .row.shop-hours .hours {	display: table-cell; vertical-align: middle}
+.left-cont .row.shop-hours li {	display: inline-block; margin: 0 ; text-transform: lowercase;}
+.left-cont .row.shop-hours li:first-child {	font-style: italic; margin-right: 10px;}
+.left-cont .row.slogan {	background-color: #313131; color: #d9d8d1; padding: 25px 2%; width: 96%;;}
+.left-cont .row.menu-cta-wrapper {	margin-bottom: 0; padding: 2%; width: 96%; }
+.left-cont .row .menu-cta { border: 2px solid black;	}
+.left-cont .row.menu-cta-wrapper .top, .left-cont .row.menu-cta-wrapper .bottom {	width: 100%;display: table;}
+.left-cont .row.menu-cta-wrapper .top {	margin-bottom: 0; border-bottom: 2px solid black;}
+.left-cont .row.menu-cta-wrapper .bottom {	 margin-top: 0; border-top: 0; padding: 0; }
+.left-cont .row.menu-cta-wrapper .table-cell {	display: table-cell; padding: 20px 10px; border-right: 2px solid black;}
+.left-cont .row.menu-cta-wrapper .table-cell:last-child {	border-right: 0;}
 .left-cont .row.menu-cta.empty {	background: none; outline: 0; }
-.left-cont .row.menu-cta span {	display: inline-block; vertical-align: middle;margin-right: 20px;}
-.left-cont .row.menu-cta img {	display: inline-block; vertical-align: middle}
+.left-cont .row.menu-cta-wrapper span {	display: inline-block; vertical-align: middle;margin-right: 20px;}
+.left-cont .row.menu-cta-wrapper img {	display: inline-block; vertical-align: middle}
 
 
-.map-wrapper { width: 55%; display: inline-block; float:right; height: 100%;}
-.map-wrapper img {min-width: 100%; width: auto; z-index: 0; height: 100%;}
+.map-wrapper { width: 55%; display: table-cell;height: 100%;  background-image: url('../images/desktop-map.png'); background-size: cover; background-repeat: no-repeat; }
+.map-wrapper .mobile img {display: none;width: 100%; z-index: 0; height: auto;}
 
 .parking-info-wrapper {position: absolute; bottom: 24px; left: 47%; z-index: 5; width: 330px; background-color: #565352;}
 .parking-info {margin: 3%; padding: 1.5%; border: 2px solid white; color: white;}
@@ -67,12 +74,14 @@ a {	text-decoration: none;}
 	.header .phone-wrapper p, .header .address-wrapper p {margin: 0; color: black;}
 	.header .phone-wrapper a {color:black;}
 	.flexslider {	margin-bottom: 0;}
-	.left-cont {	width: 100%;}
+	.bottom-cont {	display: block; margin-bottom: 0;}
+	.left-cont {	width: 100%; display: block; background: #d9d8d1}
 	.left-cont .row {	margin: 0;}
-	.left-cont .row.menu-cta.empty {	display: none;}
-	.left-cont .row.menu-cta {	outline-offset: -15px;}
-	.map-wrapper {margin: 0; width: 100%; float; none;}
-	.map-wrapper img {	width: 100%; height: auto;}
+	.left-cont .row.shop-hours {	display: table; width: 100%; max-width: 400px; margin: 0 auto;}
+	.left-cont .row.menu-cta-wrapper.empty {	display: none;}
+	.left-cont .row.menu-cta-wrapper {	outline-offset: -15px;}
+	.map-wrapper {margin: 0; width: 100%; float; none; display: block; padding-left: 0; background-image: none;}
+	.map-wrapper .mobile img { display: block;	width: 100%; height: auto;}
 	.parking-info-wrapper {position: relative; left: 0; bottom: 0; margin: 0; padding: 3%; width: 94.5%;}
 	.parking-info {margin: 0; padding: 4%;}
 	.parking-info p {font-size: 12px}
